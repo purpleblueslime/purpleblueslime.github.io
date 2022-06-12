@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>SLIME</title>
+  <link rel='icon' type='image/png' href='./assets/favicon.png' /> 
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />   
+  <link rel='stylesheet' type='text/css' href='style.css' />
+  <script defer src='script.js'></script>
+</head>
+
+<body id='root'>
+  <div class='app'>
+    <div class='serverbar-wrap'>
+      <div class='serverbar'>
+        <a href='/'
+          target='blank'>
+          <img class='server large' src='./assets/shikimori.gif'/>
+        </a>
+        <a style='height:1px;background:var(--color-textlightest);'></a>
+        <a href='https://discord.com/invite/msZahfY5Km'
+          target='blank'>
+          <img class='server large' src='./assets/RimuruCity.png'/> 
+        </a>
+        <a class='server large ico tag'>add</a>
+        <a class='server large ico tag'>explore</a>
+        <a style='height:1px;background:var(--color-textlightest);'></a>
+        <a class='server large ico tag'>download</a>
+      </div>
+    </div>
+    <div class='sidebar-wrap'>
+      <div class='find-wrap'>
+        <textarea class='find-area' placeholder='Find or start a conversation' 
+        spellcheck='false' autocorrect='off'></textarea>
+      </div>
+      <div class='direct-messages'>
+        <div class='direct-text'>DIRECT MESSAGES</div>
+        <a onclick='popMe()' class='direct-message direct-message-active'>
+          <img class='avatar small' src='./assets/me.png'/> 
+          <div class='username'>SLIME</div>
+        </a>
+        <a onclick='popShikimori()' class='direct-message'>
+          <img class='avatar small' src='./assets/shikimori.png'/> 
+          <div class='username'>Shikimori</div>
+        </a>
+        <a onclick='popPronouns()' class='direct-message'>
+          <img class='avatar small' src='./assets/pronouns.png'/> 
+          <div class='username'>Pronouns</div>
+        </a>
+        <a onclick='popRoxyPantsu()' class='direct-message'>
+          <img class='avatar small' src='./assets/RoxyPantsu.png'/> 
+          <div class='username'>Roxy Pantsu</div>
+        </a>
+        <a onclick='popA()' class='direct-message'>
+          <img class='avatar small' src='./assets/a.gif'/> 
+          <div class='username'>a</div>
+        </a>
+      </div>
+      <div class='user-wrap'>
+        <div class='user'>
+          <img class='avatar small' src='./assets/you.png'/> 
+          <div class='username'>You#0000</div>
+        </div>
+        <div class='dropup'>
+          <button class='dropup-arrow ico'>expand_less</button>
+        </div>
+      </div>
+    </div>
+    <div class='chat-container'>
+      <div class='chat-name'>
+        <span class='tag ico' style='padding:0 8px;'>alternate_email</span> SLIME
+      </div>
+      <div class='chats'>
+        <div class='chat-beginning'>
+          <img class='avatar extraLarge' src='./assets/me.png'/> 
+          <div class='username'>SLIME</div>
+          <div style='padding:8px 0;'>
+            This is the begining of your direct message history with <b>@SLIME</b>
+          </div>
+          <div class='mutual-server'>
+            <img class='avatar tiny' src='./assets/RimuruCity.png'/> 1 Mutual Server
+          </div>
+        </div>
+        <div class='messages'>
+          <div class='message'>
+            <a class='author' onclick='popMe()'>
+              <img class='avatar small' src='./assets/me.png'/> 
+              <div class='name'>SLIME</div>
+            </a>
+            <div class='message-content'>
+              uwU
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='chat-textarea'>
+        <textarea class='chat-area' placeholder='Message @SLIME' spellcheck='false' autocorrect='off'></textarea>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
