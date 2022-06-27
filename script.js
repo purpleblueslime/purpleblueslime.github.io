@@ -18,6 +18,9 @@ chatArea.addEventListener('keydown', function(e) {
   }
 });
 
+const arrowOn = new Audio('assets/arrowOn.mp3');
+const arrowOff = new Audio('assets/arrowOff.mp3');
+
 function createMessage (messageContent) {
   let messages = localStorage.getItem('messages');
   if (messages) {
@@ -348,4 +351,32 @@ function popA () {
     }
     poppedyou.remove();
   });
+}
+
+function micOff () {
+  let target = document.querySelector('.mic');
+
+  if (target.innerText == 'mic') {
+    target.innerText = 'mic_off';
+    arrowOff.play();
+    return;
+  }
+
+  target.innerText = 'mic';
+  arrowOn.play();
+  return;
+}
+
+function headphonesOff () {
+  let target = document.querySelector('.headphones');
+
+  if (target.innerText == 'headphones') {
+    target.innerText = 'headset_off';
+    arrowOff.play();
+    return;
+  }
+
+  target.innerText = 'headphones';
+  arrowOn.play();
+  return;
 }

@@ -124,15 +124,30 @@ a {
   height: 50px;
   width: 85%;
   padding: 0 8px;
+  position: relative;
   margin: 0 10px;
+}
+
+.direct-message .status {
+  border: 5px solid var(--color-foreground);
+  border-radius: 50%;
+  bottom: 5px;
+  height: 10px;
+  left: 30px;
+  position: absolute;
+  width: 10px;
+}
+
+.direct-message .username {
+  font-weight: 600;
 }
 
 .direct-message:hover, .direct-message-active {
   background-color: var(--color-tertiary); 
 }
 
-.direct-message .username {
-  font-weight: 600;
+.direct-message:hover .status, .direct-message-active .status {
+  border-color: var(--color-tertiary);
 }
 
 .user-wrap {
@@ -141,7 +156,6 @@ a {
   backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
-  gap: 65px;
   font-weight: 600;
   height: 50px;
   width: 100%; 
@@ -149,29 +163,57 @@ a {
 .user-wrap .user {
   display: flex;
   align-items: center;
+  padding-right: 12px;
 }
 
 .user-wrap .avatar {
-  padding: 0 10px;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+
+.user-wrap .status {
+  border: 5px solid var(--color-foreground);
+  border-radius: 50%;
+  bottom: 3px;
+  height: 10px;
+  left: 30px;
+  position: absolute;
+  width: 10px;
+}
+
+.user-wrap .username-wrap {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-wrap .set-status {
+  display: flex;
+  font-size: .72rem;
+  gap: 2px;
 }
 
 button {
   background-color: transparent;
   border: none;
   color: var(--color-text);
+  cursor: pointer;
   padding: 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .dropup-arrow {
+  border-radius: 4px;
+  padding: 4px;
   transition: all .2s;
 }
 
-.dropup:hover .dropup-arrow {
-  transform: rotate(180deg);
+.dropup-arrow:hover {
+  background-color: #c7c7c7;
+  transition: all .2s;
 }
 
 .chat-container {
@@ -349,7 +391,7 @@ textarea {
   width: 90px;
 }
 
-.status {
+.pop .status {
   border: 5px solid var(--color-background);
   border-radius: 50%;
   height: 15px;
