@@ -69,7 +69,7 @@ function popMe () {
           </div>
           <div class='roles-wrap'>
             <div class='pop-label'>ROLES</div><br>
-            <code>🔵 Python</code> <code>🟡 JavaScript</code> <code>⚪ Next.js</code> <code>🟣 CSS</code>
+            <code>🟣 CSS</code> <code>🟡 JavaScript</code> <code>⚪ Next.js</code> <code>🔵 Python</code> <code>🟠 JAVA</code>
           </div>    
           <div class='note-wrap'>
             <div class='pop-label'>NOTE</div><br>
