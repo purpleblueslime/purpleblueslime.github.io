@@ -85,7 +85,7 @@ a {
 .find-wrap {
   position: absolute;
   top: 0;
-  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,.8);
   border-bottom: 1px solid var(--color-textlightest);
   display: flex;
   align-items: center;
@@ -153,7 +153,7 @@ a {
 .user-wrap {
   position: absolute;
   bottom: 0;
-  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,.8);
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -225,7 +225,7 @@ button {
 .chat-name {
   position: absolute;
   top: 0;
-  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,.8);
   border-bottom: 1px solid var(--color-textlightest);
   display: flex;
   align-items: center;
@@ -240,7 +240,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,.8);
   height: 80px;
   width: 100%;
 }
@@ -347,7 +347,7 @@ textarea {
 
 .pop {
   align-items: center;
-  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,.8);
   display: grid;
   height: 100%;
   justify-content: center;
@@ -448,6 +448,7 @@ code {
 .note-area {
   border-radius: 2px;
   font-size: .6rem;
+  height: 28px;
   width: 100%;
 }
 

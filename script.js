@@ -126,9 +126,16 @@ function popMe () {
     </div>
   </div>`);
   let poppedme = document.querySelector('.pop-wrap');
-  poppedme.addEventListener('click', function({path}) {
-    if (path[0].className != 'pop') {
-      return;
+  poppedme.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
     }
     poppedme.remove();
   });
@@ -161,9 +168,16 @@ function popYou () {
     </div>
   </div>`);
   let poppedyou = document.querySelector('.pop-wrap');
-  poppedyou.addEventListener('click', function({path}) {
-    if (path[0].className != 'pop') {
-      return;
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
     }
     poppedyou.remove();
   });
@@ -184,7 +198,7 @@ function popShikimori () {
         <div class='body-wrap'>
           <div class='about-wrap'> 
             <div class='pop-label'>ABOUT ME</div><br>
-            I am not just a cutie >///<
+            Another discord bot that integrates anilist.co stats into your server / unofficial.
           </div> 
           <div class='roles-wrap'>
             <div class='pop-label'>ROLES</div><br>
@@ -209,9 +223,16 @@ function popShikimori () {
     </div>
   </div>`);
   let poppedyou = document.querySelector('.pop-wrap');
-  poppedyou.addEventListener('click', function({path}) {
-    if (path[0].className != 'pop') {
-      return;
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
     }
     poppedyou.remove();
   });
@@ -257,9 +278,71 @@ function popPronouns () {
     </div>
   </div>`);
   let poppedyou = document.querySelector('.pop-wrap');
-  poppedyou.addEventListener('click', function({path}) {
-    if (path[0].className != 'pop') {
-      return;
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
+    }
+    poppedyou.remove();
+  });
+}
+
+function popNodeAnilist () {
+  let body = document.querySelector('body');
+  body.insertAdjacentHTML('beforeend', `
+  <div class='pop-wrap'>
+    <div class='pop'>
+      <div class='pop-content'>
+        <div class='header-wrap'>
+          <div class='bannerColor' style='background-color:limegreen;'></div>
+          <img class='avatar' src='./assets/node-anilist.png' />
+          <div class='status online'></div>
+          <div class='username'>node-anilist</div>
+        </div>
+        <div class='body-wrap'>
+          <div class='about-wrap'> 
+            <div class='pop-label'>ABOUT ME</div><br>
+            A lightweight and fast node wrapper to interact with the anilist.co graphql API.
+          </div> 
+          <div class='roles-wrap'>
+            <div class='pop-label'>ROLES</div><br>
+            <code>🟡 JavaScript</code>
+          </div> 
+          <div class='note-wrap'>
+            <div class='pop-label'>NOTE</div><br>
+            <textarea class='note-area' placeholder='Click to add a note' 
+            spellcheck='false' autocorrect='off'></textarea>
+          </div>
+          <div class='connections-wrap'>
+            <div class='connection'>
+              <img class='connection-image' src='./assets/github.png'/>
+              <div class='connection-label'>node-anilist</div>
+              <a target='blank' href='https://github.com/purpleblueslime/node-anilist'>
+                <div class='ico'>arrow_forward_ios</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`);
+  let poppedyou = document.querySelector('.pop-wrap');
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
     }
     poppedyou.remove();
   });
@@ -301,9 +384,16 @@ function popRoxyPantsu () {
     </div>
   </div>`);
   let poppedyou = document.querySelector('.pop-wrap');
-  poppedyou.addEventListener('click', function({path}) {
-    if (path[0].className != 'pop') {
-      return;
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
     }
     poppedyou.remove();
   });
@@ -345,9 +435,126 @@ function popA () {
     </div>
   </div>`);
   let poppedyou = document.querySelector('.pop-wrap');
-  poppedyou.addEventListener('click', function({path}) {
-    if (path[0].className != 'pop') {
-      return;
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
+    }
+    poppedyou.remove();
+  });
+}
+
+function popChuu () {
+  let body = document.querySelector('body');
+  body.insertAdjacentHTML('beforeend', `
+  <div class='pop-wrap'>
+    <div class='pop'>
+      <div class='pop-content'>
+        <div class='header-wrap'>
+          <div class='bannerColor' style='background-color:aliceblue;'></div>
+          <img class='avatar' src='./assets/chuu.png' />
+          <div class='status online'></div>
+          <div class='username'>Chuu#7113</div>
+        </div>
+        <div class='body-wrap'>
+          <div class='about-wrap'> 
+            <div class='pop-label'>ABOUT ME</div><br>
+            Chuu discord bot. Chuu is typing...
+          </div> 
+          <div class='roles-wrap'>
+            <div class='pop-label'>ROLES</div><br>
+            <code>🟡 JavaScript</code>
+          </div> 
+          <div class='note-wrap'>
+            <div class='pop-label'>NOTE</div><br>
+            <textarea class='note-area' placeholder='Click to add a note' 
+            spellcheck='false' autocorrect='off'></textarea>
+          </div>
+          <div class='connections-wrap'>
+            <div class='connection'>
+              <img class='connection-image' src='./assets/github.png'/>
+              <div class='connection-label'>Chuu</div>
+              <a target='blank' href='https://github.com/purpleblueslime/chuu'>
+                <div class='ico'>arrow_forward_ios</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`);
+  let poppedyou = document.querySelector('.pop-wrap');
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
+    }
+    poppedyou.remove();
+  });
+}
+
+function popHmangaRead () {
+  let body = document.querySelector('body');
+  body.insertAdjacentHTML('beforeend', `
+  <div class='pop-wrap'>
+    <div class='pop'>
+      <div class='pop-content'>
+        <div class='header-wrap'>
+          <div class='bannerColor' style='background-color:lightpink;'></div>
+          <img class='avatar' src='./assets/RimuruCity.png' />
+          <div class='status online'></div>
+          <div class='username'>hmangaRead</div>
+        </div>
+        <div class='body-wrap'>
+          <div class='about-wrap'> 
+            <div class='pop-label'>ABOUT ME</div><br>
+            Freely read hentai mangas without any ads.
+          </div> 
+          <div class='roles-wrap'>
+            <div class='pop-label'>ROLES</div><br>
+            <code>🟡 JavaScript</code> <code>⚪ Next.js</code> <code>🟣 CSS</code>
+          </div>    
+          <div class='note-wrap'>
+            <div class='pop-label'>NOTE</div><br>
+            <textarea class='note-area' placeholder='Click to add a note' 
+            spellcheck='false' autocorrect='off'></textarea>
+          </div>
+          <div class='connections-wrap'>
+            <div class='connection'>
+              <img class='connection-image' src='./assets/github.png'/>
+              <div class='connection-label'>hmangaRead</div>
+              <a target='blank' href='https://github.com/hmangaRead'>
+                <div class='ico'>arrow_forward_ios</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`);
+  let poppedyou = document.querySelector('.pop-wrap');
+  poppedyou.addEventListener('click', function(e) {
+    if (e.path) {
+      if (e.path[0].className != 'pop') {
+        return;
+      }
+    }
+    else {
+      if (e.target.className != 'pop') {
+        return;
+      }
     }
     poppedyou.remove();
   });
